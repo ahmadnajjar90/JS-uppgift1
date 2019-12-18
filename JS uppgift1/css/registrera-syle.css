@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.reg-form{
+    padding:1rem;
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#f1f1f1;
+    box-shadow: 0 0 7px 1px rgb(255, 199, 179);
+}
+
+#error-firstname , #error-lastname , #error-email,
+#error-password , #error-confirm , #error-radio , 
+#error-select , #error-checkbox , #error-textarea{
+    height: 20px;
+    color: coral;
+    font-size: 13px;
+}
+
+form h1{
+    color: coral;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#first-name , #last-name{
+    width: 100%;
+    height: 30px;
+}
+
+.contact-info input{
+    width: 100%;
+    height: 30px;
+}
+
+#password , #confirm{
+    width: 100%;
+    height: 30px;
+}
+
+#description{
+    width: 100%;
+    resize: none;
+    padding: 0.25rem;
+}
+
+.policy{
+    display: flex;
+}
+
+#terms{
+    margin-top: 0.21rem;
+    margin-right: 0.25rem;
+}
+
+a{
+    color: coral;
+    text-decoration: none;
+}
+
+form a:hover{
+    color:rgb(236, 75, 16);
+}
+
+form button:hover{
+    background-color:rgb(236, 75, 16);
+}
+
+form button{
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: coral;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width:576px){
+    .reg-form{
+        width: 95%;
+    }
+}

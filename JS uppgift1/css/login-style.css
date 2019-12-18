@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.login-form{
+    padding: 2rem 2rem 1rem 2rem;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#f1f1f1;
+    box-shadow: 0 0 7px 1px rgb(255, 199, 179);
+}
+
+form h1{
+    color: coral;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form input,button{
+    width: 100%;
+    height: 40px;
+    padding:0.6rem;
+}
+
+form button{
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: coral;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#error-email , #error-password{
+    color: coral;
+    height: 22px;
+}
+
+a{
+    color: coral;
+    text-decoration: none;
+}
+
+form a:hover{
+    color:rgb(236, 75, 16);
+}
+
+form button:hover{
+    background-color:rgb(236, 75, 16);
+}
+
+@media(max-width:576px){
+    .login-form{
+        width: 95%;
+    }
+}

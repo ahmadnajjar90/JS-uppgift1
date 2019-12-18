@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="../css/registrera-syle.css">
+</head>
+<body>
+    <form class="reg-form">
+        <h1>Create an account</h1>
+        <div>
+            <input id="first-name" type="text" placeholder="First name">
+            <div id="error-firstname"></div>
+        </div>
+
+        <div>   
+            <input id="last-name" type="text" placeholder="Last name">
+            <div id="error-lastname"></div>
+        </div>
+
+        <div class="contact-info">
+            <input id="email" type="text" placeholder="Email">
+            <div id="error-email"></div>
+        </div>
+
+        <div class="password">
+            <input id="password" type="password" placeholder="Password">
+            <div id="error-password"></div>
+        </div>
+        
+        <div>
+            <input id="confirm" type="password" placeholder="Confirm password">
+            <div id="error-confirm"></div>
+        </div>
+        
+        <div>
+            Age:&nbsp;
+            <input type="radio" name="age" id="years18"><label for="years18">18 years</label>
+            &nbsp; 
+            <input type="radio" name="age" id="plus18"><label for="plus18">+18 years</label>
+            <div id="error-radio"></div>
+        </div>
+            
+        <div>
+            Gender:
+            <select name="gender" id="gender">
+                <option value="">-Select-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <div id="error-select"></div>
+        </div>
+        <div>
+            <textarea id="description" rows="5" placeholder="Add a description...."></textarea>
+            <div id="error-textarea"></div>
+        </div>
+        <div>
+            <div class="policy">
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label>
+            </div>
+            <div id="error-checkbox"></div>
+        </div>
+        <button type="submit">Create</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/reg-script.js"></script>
+</body>
+</html>
